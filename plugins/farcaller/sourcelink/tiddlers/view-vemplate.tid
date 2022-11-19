@@ -1,0 +1,13 @@
+title: $:/plugins/farcaller/sourcelink/view-template
+type: text/vnd.tiddlywiki
+tags: $:/tags/ViewTemplate
+list-after: $:/core/ui/ViewTemplate/subtitle
+
+\whitespace trim
+<$list filter='[is[current]!field:source[]]' variable=dummy>
+<$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
+<div class="tc-subtitle">
+<a class="tc-tiddlylink tc-tiddlylink-missing" href="#"></a>
+<a style="text-decoration: none" target="blank" href={{!!source}}>source&nbsp;&rarr;</a></div>
+</$reveal>
+</$list>

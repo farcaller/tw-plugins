@@ -1,0 +1,14 @@
+{
+	"description": "Develop",
+	"plugins": [
+		"tiddlywiki/filesystem",
+		"tiddlywiki/tiddlyweb",
+		"farcaller/sourcelink"
+	],
+	"themes": [
+		"tiddlywiki/vanilla"
+	],
+	"config": {
+		"retain-original-tiddler-path": false
+	}
+}

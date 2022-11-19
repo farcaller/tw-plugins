@@ -1,0 +1,26 @@
+{
+  "name": "tw-plugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "cross-env TIDDLYWIKI_PLUGIN_PATH=plugins npx tiddlywiki editions/develop --verbose --server 55505 $:/core/save/all text/plain text/html",
+    "develop:watch": "nodemon --exec npm run develop",
+    "release": "cross-env TIDDLYWIKI_PLUGIN_PATH=plugins npx tiddlywiki editions/release --verbose --output . --build release"
+  },
+  "author": "Vladimir Pouzanov <farcaller@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "tiddlywiki": "^5.2.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "plugins/**"
+    ],
+    "ext": "tid,meta,css,js,html,info,md"
+  }
+}
