@@ -1,0 +1,16 @@
+title: $:/plugins/farcaller/youtube/youtube-api
+type: text/html
+tags: $:/tags/RawMarkup
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+
+function onYouTubeIframeAPIReady() {
+  console.log('YT API loaded');
+  // TODO: this is a race condition that needs to be addressed with the boot.js boot ordering
+  if (!window.$tw) {
+    return;
+  }
+  $tw.wiki.setText("$:/temp/youtube-api-loaded", "text", "", "true");
+}
+</script>

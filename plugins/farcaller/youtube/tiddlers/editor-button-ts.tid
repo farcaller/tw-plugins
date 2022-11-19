@@ -1,0 +1,15 @@
+title: $:/plugins/farcaller/youtube/editor-button-ts
+type: text/vnd.tiddlywiki
+caption: ytts
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+description: ytts
+icon: $:/plugins/farcaller/youtube/youtube-icon
+list-after: $:/core/ui/EditorToolbar/link
+tags: $:/tags/EditorToolbar
+
+<$action-sendmessage
+	$message="tm-edit-text-operation"
+	$param="wrap-selection"
+	prefix='<<ytts "'
+	suffix='">>'
+/>

@@ -1,7 +1,8 @@
 {
 	"description": "Release",
 	"plugins": [
-		"farcaller/sourcelink"
+		"farcaller/sourcelink",
+		"farcaller/youtube"
 	],
 	"themes": [
 		"tiddlywiki/vanilla"

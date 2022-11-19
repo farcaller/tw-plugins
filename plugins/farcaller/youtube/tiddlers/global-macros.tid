@@ -1,0 +1,15 @@
+title: $:/plugins/farcaller/youtube/global-macros
+type: text/vnd.tiddlywiki
+tags: $:/tags/Macro
+
+\define youtube(video)
+<$youtube video="$video$" />
+\end
+
+\define ytts(ts, video:"")
+<$youtubeTimestamp video="$video$" timestamp="$ts$" shadowVideo=<<shadowYTID>> />
+\end
+
+\define youtube_collection()
+{{||$:/plugins/farcaller/youtube/youtube_CollectionTemplate}}
+\end

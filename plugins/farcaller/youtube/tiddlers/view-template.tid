@@ -1,0 +1,8 @@
+title: $:/plugins/farcaller/youtube/view-template
+list-before: $:/core/ui/ViewTemplate/body
+tags: $:/tags/ViewTemplate
+type: text/vnd.tiddlywiki
+
+<$list filter='[is[current]!field:youtube-id[]]' variable=dummy>
+<$macrocall $name="youtube" video={{!!youtube-id}} />
+</$list>

@@ -1,0 +1,17 @@
+title: $:/plugins/farcaller/youtube/collection-template
+type: text/vnd.tiddlywiki
+
+!!! Contents
+<<list-links filter:"[all[current]tagging[]]">>
+<hr/>
+<$list filter="[all[current]tagging[]]">
+<$vars shadowYTID={{!!youtube-id}}>
+<$transclude tiddler="$:/plugins/farcaller/youtube/view-template" />
+</$vars>
+</$list>
+<$list filter="[all[current]tagging[]]">
+<h2><$link><$transclude field="title"/></$link></h2>
+<$vars shadowYTID={{!!youtube-id}}>
+<$transclude mode="block"/>
+</$vars>
+</$list>

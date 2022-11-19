@@ -3,7 +3,8 @@
 	"plugins": [
 		"tiddlywiki/filesystem",
 		"tiddlywiki/tiddlyweb",
-		"farcaller/sourcelink"
+		"farcaller/sourcelink",
+		"farcaller/youtube"
 	],
 	"themes": [
 		"tiddlywiki/vanilla"
