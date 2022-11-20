@@ -1,10 +1,10 @@
 {
   "title": "$:/plugins/farcaller/youtube",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "core-version": ">=5.2.3",
   "description": "Adds the youtube integration.",
   "author": "Vladimir Pouzanov",
   "source": "https://github.com/farcaller/tw-plugins",
   "plugin-type": "plugin",
-  "list": "readme license history"
+  "list": "readme settings license history"
 }

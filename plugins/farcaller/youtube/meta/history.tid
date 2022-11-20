@@ -1,4 +1,5 @@
 title: $:/plugins/farcaller/youtube/history
 type: text/vnd.tiddlywiki
 
+* ''1.0.1'' -- Add support for YT video links pasting
 * ''1.0.0'' -- Initial release

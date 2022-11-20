@@ -1,0 +1,14 @@
+title: $:/plugins/farcaller/youtube/settings
+type: text/vnd.tiddlywiki
+
+<table>
+<tbody>
+<tr>
+  <td align="center">
+    ''API key''<br/>
+    //YouTube API key for metadata scraping//
+  </td>
+  <td>
+    <$edit-text tiddler="$:/plugins/farcaller/youtube/configuration" field="apikey" size="255"/>
+  </td>
+</tr>
