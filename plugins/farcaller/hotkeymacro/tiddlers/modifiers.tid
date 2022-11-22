@@ -1,0 +1,10 @@
+title: $:/plugins/farcaller/hotkeymacro/modifiers
+type: application/x-tiddler-dictionary
+
+Opt: ⌥
+Shift: ⇧
+Cmd: ⌘
+Tab: ⇥
+Ctrl: ⌃
+Lmb: {{$:/plugins/farcaller/hotkeymacro/icons/lmb}}
+Rmb: {{$:/plugins/farcaller/hotkeymacro/icons/rmb}}

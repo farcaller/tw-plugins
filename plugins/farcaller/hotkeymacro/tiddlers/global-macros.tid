@@ -1,0 +1,11 @@
+title: $:/plugins/farcaller/hotkeymacro/global-macros
+type: text/vnd.tiddlywiki
+tags: $:/tags/Macro
+
+\define hotkey(key)
+<span class="hotkeymacro-hotkey">
+<$list filter="[<__key__>split[+]sentencecase[]]" variable="k">
+<$transclude tiddler="$:/plugins/farcaller/hotkeymacro/modifiers" index=<<k>>><<k>></$transclude>
+</$list>
+</span>
+\end

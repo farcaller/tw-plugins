@@ -1,0 +1,12 @@
+title: $:/plugins/farcaller/hotkeymacro/hotkey.css
+type: text/css
+tags: $:/tags/Stylesheet
+
+.hotkeymacro-hotkey {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0px 3px 0px 3px;
+  box-shadow: 1px 1px 3px grey;
+  margin: 0px 7px 0px 3px;
+}

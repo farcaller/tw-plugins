@@ -1,0 +1,10 @@
+{
+  "title": "$:/plugins/farcaller/hotkeymacro",
+  "version": "1.0.0",
+  "core-version": ">=5.2.3",
+  "description": "Adds a macro to style hotkeys.",
+  "author": "Vladimir Pouzanov",
+  "source": "https://github.com/farcaller/tw-plugins",
+  "plugin-type": "plugin",
+  "list": "readme license history"
+}
