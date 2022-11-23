@@ -4,7 +4,16 @@
 		"tiddlywiki/filesystem",
 		"tiddlywiki/tiddlyweb",
 		"farcaller/sourcelink",
-		"farcaller/youtube"
+		"farcaller/youtube",
+		"farcaller/hotkeymacro",
+		"tiddlywiki/codemirror",
+		"tiddlywiki/codemirror-search-replace",
+		"tiddlywiki/codemirror-mode-x-tiddlywiki",
+		"tiddlywiki/codemirror-mode-markdown",
+		"tiddlywiki/codemirror-mode-javascript",
+		"tiddlywiki/codemirror-mode-css",
+		"tiddlywiki/codemirror-closebrackets",
+		"tiddlywiki/codemirror-closetag"
 	],
 	"themes": [
 		"tiddlywiki/vanilla"
