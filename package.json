@@ -6,11 +6,13 @@
   "scripts": {
     "develop": "cross-env TIDDLYWIKI_PLUGIN_PATH=plugins npx tiddlywiki editions/develop --verbose --server 55505 $:/core/save/all text/plain text/html",
     "develop:watch": "nodemon --exec npm run develop",
-    "release": "cross-env TIDDLYWIKI_PLUGIN_PATH=plugins npx tiddlywiki editions/release --verbose --output . --build release"
+    "release": "cross-env TIDDLYWIKI_PLUGIN_PATH=plugins npx tiddlywiki editions/release --verbose --output . --build release",
+    "thirdparty": "cp -f ./node_modules/short-unique-id/dist/short-unique-id.min.js ./plugins/farcaller/bojotask/thirdparty/"
   },
   "author": "Vladimir Pouzanov <farcaller@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "short-unique-id": "^4.4.4",
     "tiddlywiki": "^5.2.3"
   },
   "devDependencies": {

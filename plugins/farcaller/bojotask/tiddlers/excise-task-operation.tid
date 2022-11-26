@@ -1,0 +1,12 @@
+title: $:/plugins/farcaller/bojotask/excise-task-operation
+tags: $:/tags/EditorToolbar
+icon: $:/core/images/done-button
+caption: Excise Task
+description: Extracts the selection into a new task.
+condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
+shortcuts: ctrl-shift-e
+
+<$action-sendmessage
+  $message="tm-edit-text-operation"
+  $param="excise-task"
+/>

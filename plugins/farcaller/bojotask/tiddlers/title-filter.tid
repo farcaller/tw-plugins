@@ -1,0 +1,6 @@
+title: $:/plugins/farcaller/bojotask/title-filter
+type: text/vnd.tiddlywiki
+list-before: $:/config/ViewTemplateTitleFilters/default
+tags: $:/tags/ViewTemplateTitleFilter
+
+[!field:task[]then[$:/plugins/farcaller/bojotask/title]]

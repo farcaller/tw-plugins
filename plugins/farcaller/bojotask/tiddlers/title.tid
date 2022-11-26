@@ -1,0 +1,22 @@
+title: $:/plugins/farcaller/bojotask/title
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define toggle()
+<$action-listops $field="task" $subfilter="+[cycle[pending completed irrelevant]]"/>
+\end
+<$list filter="[<currentTiddler>get[task]]" variable="task">
+<$list filter="[<currentTiddler>field:task[irrelevant]then[farcaller-bojotask-irrelevant]else[]addprefix[tc-title ]]" variable="header-css">
+<$list filter="[<currentTiddler>field:task[irrelevant]then[farcaller-bojotask-irrelevant]else[]addprefix[tc-btn-invisible farcaller-bojotask-title ]]" variable="button-css">
+<h2 class=<<header-css>>>
+  <$button
+    class=<<button-css>>
+    actions=<<toggle>>
+  >
+    <$view tiddler="$:/plugins/farcaller/bojotask/statuses" index=<<task>> />
+  </$button>
+  <$text text=<<currentTiddler>>/>
+</h2>
+</$list>
+</$list>
+</$list>

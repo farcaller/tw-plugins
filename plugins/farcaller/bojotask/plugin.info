@@ -1,0 +1,10 @@
+{
+  "title": "$:/plugins/farcaller/bojotask",
+  "version": "1.0.1",
+  "core-version": ">=5.2.3",
+  "description": "Adds a toolbar button to convert the selection into a task.",
+  "author": "Vladimir Pouzanov",
+  "source": "https://github.com/farcaller/tw-plugins",
+  "plugin-type": "plugin",
+  "list": "readme license history"
+}

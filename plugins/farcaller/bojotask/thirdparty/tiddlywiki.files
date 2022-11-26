@@ -1,0 +1,14 @@
+{
+  "tiddlers": [
+    {
+      "file": "./short-unique-id.min.js",
+      "fields": {
+        "title": "$:/plugins/farcaller/bojotask/thirdparty/short-unique-id.js",
+        "type": "application/javascript",
+        "license": "Apache-2.0",
+        "source": "https: //github.com/simplyhexagonal/short-unique-id",
+        "module-type": "utils"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+title: $:/plugins/farcaller/bojotask/task.css
+type: text/css
+tags: $:/tags/Stylesheet
+
+.farcaller-bojotask-title {
+  color: #000;
+  background-color: #e9e9e9;
+  margin-right: 0.2em;
+  width: 1em;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.farcaller-bojotask-irrelevant {
+  text-decoration: underline;
+  text-underline-offset: -43%; /* <-- this */
+  text-decoration-skip-ink: none;
+}
