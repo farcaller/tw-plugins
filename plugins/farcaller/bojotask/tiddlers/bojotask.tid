@@ -1,0 +1,7 @@
+title: $:/plugins/farcaller/bojotask/macros/bojotask
+type: text/vnd.tiddlywiki
+tags: $:/tags/Macro
+
+\define bojotask(slug)
+<$bojowidget slug=<<__slug__>>><$link /></$bojowidget>
+\end

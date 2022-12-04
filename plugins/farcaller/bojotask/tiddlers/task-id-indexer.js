@@ -38,12 +38,26 @@ Indexes the tiddlers with bojo task ids.
         return;
       }
 
+      if (!update.old.tiddler?.fields[TASK_ID_FIELD] && !update.new.tiddler?.fields[TASK_ID_FIELD]) {
+        return;
+      } 
+
       if (update.old.exists) {
         if (update.new.exists) {
+          if (this.wiki.isShadowTiddler(update.new.tiddler.fields.title)) {
+            return;
+          }
+
+          if (this.wiki.findDraft(update.new.tiddler.fields.title)) {
+            return;
+          }
+
           if (update.old.tiddler.fields[TASK_ID_FIELD] !== update.new.tiddler.fields[TASK_ID_FIELD]) {
-            // update changed the task id. Drop the cache.
-            console.warn(`task id inconsistency between ${update.old.tiddler} and ${update.new.tiddler}, dropping the cache`);
-            this.rebuild();
+            // update wins
+            console.warn(`task id inconsistency between ${update.old.tiddler} and ${update.new.tiddler}, update wins`);
+            const oldTaskId = update.old.tiddler.fields[TASK_ID_FIELD];
+            this.index[oldTaskId] = update.new.tiddler;
+            return;
           } else {
             // update changed something. We don't care.
           }
@@ -58,6 +72,11 @@ Indexes the tiddlers with bojo task ids.
             if (this.wiki.findDraft(update.old.tiddler.fields.title)) {
               return;
             }
+            
+            if (update.old.tiddler.fields.title !== this.index[oldTaskId]?.fields.title) {
+              return;
+            }
+
             delete this.index[oldTaskId];
           }
         }
@@ -81,8 +100,9 @@ Indexes the tiddlers with bojo task ids.
           return;
         }
         if (this.index[newTaskId]) {
-          console.warn(`task id collision between ${update.new.tiddler} and ${this.index[newTaskId]}, dropping the cache`);
-          this.rebuild();
+          console.warn(`task id collision between ${update.new.tiddler} and ${this.index[newTaskId]}, update wins`);
+          this.index[newTaskId] = update.new.tiddler;
+          return;
         }
         this.index[newTaskId] = update.new.tiddler;
       }
