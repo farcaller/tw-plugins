@@ -3,6 +3,7 @@
 	"plugins": [
 		"tiddlywiki/filesystem",
 		"tiddlywiki/tiddlyweb",
+		"tiddlywiki/internals",
 		"farcaller/sourcelink",
 		"farcaller/youtube",
 		"farcaller/hotkeymacro",
